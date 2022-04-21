@@ -28,8 +28,7 @@ int main()
 			matrix[x][y] = x * i + y;
 
 	//перемешивание игры
-	int step = 0,
-		parity;
+	int step, parity;
 	do
 	{
 		step = 0;
@@ -48,7 +47,7 @@ int main()
 					X0 = x; Y0 = y;
 				}
 			}
-		//узнаем параметр беспорядка
+			//узнаем параметр беспорядка
 		for (int N1 = 0; N1 < i * j - 1; N1++)
 			for (int N2 = N1; WINMmatrix[N1 / i][N1 % i] != N1 + 1; N2++)
 				if (WINMmatrix[N2 / i][N2 % i] == N1 + 1) {
